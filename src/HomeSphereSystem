@@ -1,0 +1,31 @@
+public boolean login(String loginName,String loginPassword){
+    for(User user:household.getUsers()){
+        if
+    }
+}
+public void logoff(){
+    if(currentUser!=null){
+
+    }
+}
+public User register(String loginName,String loginPassword,String userName,String email){
+    int newUserId=household.getUser().size()+1;
+    User newUser=new User();
+    household.addUser(User);
+    return newUser;
+}
+public void dispalyUsers(){
+    for(User user:house.getUser()){
+        System.out.println(user);
+    }
+}
+public void displayEnergyReportings(Date start time,Date endTime){
+    for(Device device:household.listAllDevice()){
+        if(device instanceof EnergyReporting){
+            EnergyReporting energyDevice = (EnergyReporting) device;
+            double power = energyDevice.getPower();
+            double report = energyDevice.getReport(startTime, endTime);
+            System.out.println("设备: " + device.getName() + ", 功率: " + power + "W, 能耗: " + report + "kWh");
+        }
+    }
+}
